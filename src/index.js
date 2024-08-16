@@ -1,14 +1,4 @@
-import DOCS from './tips.html'
- 
-// return tips.html
-if (url.pathname === "/") {
-  return new Response(DOCS, {
-    status: 200,
-    headers: {
-      "content-type": "text/html"
-    }
-  });
-}
+
 
 addEventListener("fetch", (event) => {
   event.passThroughOnException();
